@@ -1,0 +1,52 @@
+.updatekey {
+  background: #fff;
+  padding: 10px;
+  margin: 20px auto;
+  max-width: 400px;
+  border-radius: 5px;
+  color: #222;
+}
+.updatekey h1 {
+  padding: 5px 0;
+  margin: 5px auto;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+.updatekey div {
+  margin: 1rem auto;
+}
+.updatekey div label {
+  font-size: 1.1rem;
+}
+.updatekey div input,
+.updatekey div textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 1.1rem;
+  color: #333;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.updatekey div textarea{
+  min-height: 200px;
+}
+.updatekey div input:focus,
+.updatekey div textarea:focus {
+  border: 1px solid #bdbdbd;
+}
+.updatekey button {
+  font-size: 1.01rem;
+  padding: 0.3rem 0.75rem;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  background: #28b463;
+}
+.updatekey button:hover {
+  background: #000;
+}
+.updatekey button:disabled {
+ opacity: 0.5;
+}
