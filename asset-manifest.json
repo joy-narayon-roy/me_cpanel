@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/me_cpanel/static/css/main.51d37e73.css",
-    "main.js": "/me_cpanel/static/js/main.f4f4f52c.js",
+    "main.js": "/me_cpanel/static/js/main.e0dbfcaa.js",
     "static/media/supercell.ttf": "/me_cpanel/static/media/supercell.cd01556810e60d510ff6.ttf",
     "index.html": "/me_cpanel/index.html",
     "main.51d37e73.css.map": "/me_cpanel/static/css/main.51d37e73.css.map",
-    "main.f4f4f52c.js.map": "/me_cpanel/static/js/main.f4f4f52c.js.map"
+    "main.e0dbfcaa.js.map": "/me_cpanel/static/js/main.e0dbfcaa.js.map"
   },
   "entrypoints": [
     "static/css/main.51d37e73.css",
-    "static/js/main.f4f4f52c.js"
+    "static/js/main.e0dbfcaa.js"
   ]
 }
