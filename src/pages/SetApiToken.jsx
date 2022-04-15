@@ -20,8 +20,9 @@ export default function SetApiToken() {
     })
       .then((res) => res.json())
       .then((dat) => {
-        setData(dat[0]);
-        settoken(dat[0].token);
+        dat.data[0].ip = dat.ip;
+        setData(dat.data[0]);
+        settoken(dat.data[0].token);
       })
       .catch((err) => console.log(err));
   }, [url]);
@@ -60,10 +61,11 @@ export default function SetApiToken() {
         console.log(err);
       });
   };
+  console.log(data);
   return (
     <section className="container">
       <form onSubmit={handelSubmit} className="updatekey" id="dataform1">
-        <h1>Set Api Token {data && `(${data.name})`}</h1>
+        <h1>Set Api Token {data && `(${data.dataname})`}</h1>
         {data && (
           <>
             <div>
@@ -76,7 +78,7 @@ export default function SetApiToken() {
                 value={password}
               />
             </div>
-
+            {console.log()}
             <div>
               <label>Token</label>
               <textarea name="token" onChange={handelInput} value={token} />
@@ -94,8 +96,12 @@ export default function SetApiToken() {
         </button>
 
         <div className="status">
+          <b>Ip : {data && data.ip[Object.keys(data.ip)[0]]}</b>
+          <br />
+          <br />
           <b>
-            Updated at :- {data && new Date(data.updatedAt).toLocaleString()}
+            Updated at :-{" "}
+            {data && new Date(data.dataupdatedAt).toLocaleString()}
           </b>
         </div>
       </form>
